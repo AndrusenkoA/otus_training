@@ -45,3 +45,15 @@ mdadm --detail --scan | awk '/ARRAY/ {print}' >> /etc/mdadm/mdadm.conf </br>
 3. Добавляем sdb3 </br>
 Вводим команду mdadm --manage /dev/md127 --add /dev/sdb3 </br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/09.jpg)
+
+# GPT и партиции
+1. Выполняем команду sudo parted /dev/md127 mklabel gpt и создаем GPT </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/10.jpg)
+
+2. Создаем 5 GPT партиций с использованием следующих команд: </br>
+sudo parted /dev/md127 mkpart primary ext4 0% 20% </br>
+sudo parted /dev/md127 mkpart primary ext4 20% 40% </br>
+sudo parted /dev/md127 mkpart primary ext4 40% 60% </br>
+sudo parted /dev/md127 mkpart primary ext4 60% 80% </br>
+sudo parted /dev/md127 mkpart primary ext4 80% 100% </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/11.jpg)
