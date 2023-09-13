@@ -32,3 +32,16 @@ sudo mdadm --create -l 1 -n 2  /dev/dev/sdb1 /dev/sdb2 </br>
 echo DEVICE partitions /etc/mdadm/mdadm.conf </br>
 mdadm --detail --scan | awk '/ARRAY/ {print}' >> /etc/mdadm/mdadm.conf </br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/06.jpg)
+
+# "Сбой" диска, удаление и добавление нового
+1. Имитируем неисправность диска sdb2 </br>
+Вводим команду mdadm --manage /dev/md127 --fail /dev/sdb2 </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/07.jpg)
+
+2. Удаляем /dev/sdb2 из RAID </br>
+Вводим команду mdadm --manage /dev/md127 --remove /dev/sdb2 </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/08.jpg)
+
+3. Добавляем sdb3 </br>
+Вводим команду mdadm --manage /dev/md127 --add /dev/sdb3 </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/09.jpg)
