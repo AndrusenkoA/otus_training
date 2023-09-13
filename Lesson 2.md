@@ -26,3 +26,9 @@ sudo mdadm --create -l 1 -n 2  /dev/dev/sdb1 /dev/sdb2 </br>
 Используем команду sudo mkfs.ext4 /dev/md127 </br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/05.jpg)
 
+# mdadm.conf
+1. Создан файл mdadm.conf и в него добавлена информация о нашем рейде </br>
+Создание выполняется следующим набором команд: </br>
+echo DEVICE partitions /etc/mdadm/mdadm.conf </br>
+mdadm --detail --scan | awk '/ARRAY/ {print}' >> /etc/mdadm/mdadm.conf </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/06.jpg)
