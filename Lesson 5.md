@@ -22,3 +22,15 @@
 
 6. Проверям уровень компрессии по пулам. Как видим, самое лучшее сжатие в пуле otus3 </br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/506.jpg)
+
+# Определяем настройки пула
+1. Скачиваем файл из методички и распаковываем его</br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/507.jpg)
+
+2. Выполняем импорт пула</br>
+В моем случае после выполнения команды zpool import -d zpoolexport/ пришлось выполнить zpool upgrade и только потом запустить вторую команду zpool import -d zpoolexport/ otus </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/508.jpg)</br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/508_011.jpg)
+
+3. Описание настроек привидено на скриншоте ниже</br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/509.jpg)
