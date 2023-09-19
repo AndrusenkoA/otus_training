@@ -34,3 +34,13 @@
 
 3. Описание настроек привидено на скриншоте ниже</br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/509.jpg)
+
+# Восстановление пула из снэпшота
+1. Качаем наш снэпшот</br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/510.jpg)
+
+2. Запускаем команду восстановления zfs receive</br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/511.jpg)
+
+3. Находим зашифрованное сообщение</br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/512.jpg)
