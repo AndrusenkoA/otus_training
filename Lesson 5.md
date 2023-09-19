@@ -1,5 +1,5 @@
 # otus_training lesson 5
-Используется сервер Ubuntu 22.04
+Используется сервер Ubuntu 22.04 </br>
 Добавлено 8 дисков для тестирования
 
 # Определение алгоритма с наилучшим сжатием
@@ -7,7 +7,7 @@
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/501.jpg)
 
 2. Создаем 4 пула</br>
-Используется команда zpool create:
+Используется команда zpool create:</br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/502.jpg)
 
 3. Проверяем наши созданные пулы</br>
