@@ -30,7 +30,7 @@
 2. Выполняем импорт пула</br>
 В моем случае после выполнения команды zpool import -d zpoolexport/ пришлось выполнить zpool upgrade и только потом запустить вторую команду zpool import -d zpoolexport/ otus </br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/508.jpg)</br>
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/508_011.jpg)
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/508_01.jpg)
 
 3. Описание настроек привидено на скриншоте ниже</br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/509.jpg)
