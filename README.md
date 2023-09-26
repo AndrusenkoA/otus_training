@@ -27,3 +27,13 @@
 
 3. Проверяем подключение через df -h</br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/6_07.jpg)
+
+# Тесты
+1. Создаем файл check_file</br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/6_08.jpg)
+
+2. Проверяем файл с клиента</br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/6_09.jpg)
+
+3. Создаем файл client_file и проверяем, что он создан</br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/6_10.jpg)
