@@ -34,3 +34,9 @@ CentOS 8 Stream для демонстрации переименования VG 
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/14.jpg)
 
 # Добавление модуля в initrd
+1. Создаем каталог согласно инструкции </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/15.jpg)
+2. Ложим 2 файла согласно методичке </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/16.jpg)
+3. Собираем образ и проверяем </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/17.jpg)
