@@ -24,3 +24,9 @@ CentOS 8 Stream для демонстрации переименования VG 
 По данному варианту скриншотов не предоставлено, поскольку основное отличие от 2 варианта - это то, что ФС сразу подмонтирована на чтение/запись
 
 # Установка системы с LVM и переименование
+1. Получаем текущее состояние системы </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/08.jpg)
+2. Переименовываем группу </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/09.jpg)
+3. Правим fstab и grub и пересоздаем inird image </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/13.jpg)
