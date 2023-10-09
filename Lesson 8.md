@@ -30,3 +30,7 @@ CentOS 8 Stream для демонстрации переименования VG 
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/09.jpg)
 3. Правим fstab и grub и пересоздаем inird image </br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/13.jpg)
+4. Перезагружаем и проверяем, что мы запустились с переименованного LVM </br>
+![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/14.jpg)
+
+# Добавление модуля в initrd
