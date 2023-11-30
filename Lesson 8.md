@@ -1,43 +1,18 @@
-# Otus_lesson_8
-В текущем домашнем задании использовалось 2 версии ОС:
-Ubuntu Server 22.04 для демонстрации доступа без пароля;
-CentOS 8 Stream для демонстрации переименования VG и изменения initrd
+# Otus_lesson_21
+В текущем домашнем задании использовались компоненты:
+ОС - CentOS 9 Stream;
+Zabbix - Zabbix 6.4.8;
 
-# Попасть в систему несколькими путями без пароля
-Вариант 1 - init=/bin/bash
-1. Заходим в консоль GRUB </br>
+
+# Для начала был установлен Zabbix
+Для домашнего задания взял крайнюю версию Zabbix 6.4.8. Установил стандартно на одном сервере.
+
+# Подключение Windows Server в Zabbix
+В рамках домашнего задания решил подключить в тестовом режиме свою виртуальную машину:
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/01.jpg)
-2. В конце строки Linux вводим ini=/bin/sh и нажимаем ctrl-x </br>
+
+# Dashboard в Zabbix 6.4
+После того, как был подключен Windows Server, запустил Dashboard с отображением параметров - скриншоты ниже:
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/02.jpg)
-3. Мы попали в систему </br>
 ![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/03.jpg)
-4. Попробуем перемонтировать в режим RW </br>
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/04.jpg)
 
-Вариант 2 - init=/bin/bash
-1. В конце строки Linux вводим rd.break и нажимаем ctrl-x </br>
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/05.jpg)
-2. Попадаем в Recovery mode
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/06.jpg)
-
-Вариант 3 - rw init=/sysroot/bin/sh
-По данному варианту скриншотов не предоставлено, поскольку основное отличие от 2 варианта - это то, что ФС сразу подмонтирована на чтение/запись
-
-# Установка системы с LVM и переименование
-1. Получаем текущее состояние системы </br>
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/08.jpg)
-2. Переименовываем группу </br>
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/09.jpg)
-3. Правим fstab и grub и пересоздаем inird image </br>
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/13.jpg)
-4. Перезагружаем и проверяем, что мы запустились с переименованного LVM </br>
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/14.jpg)
-
-# Добавление модуля в initrd
-1. Создаем каталог согласно инструкции </br>
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/15.jpg)
-2. Ложим 2 файла согласно методичке </br>
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/16.jpg)
-3. Собираем образ и проверяем </br>
-![Image alt](https://github.com/AndrusenkoA/otus_training/blob/main/17.jpg)
- 
